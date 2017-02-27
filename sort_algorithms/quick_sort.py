@@ -12,14 +12,14 @@ def partition(list, start, end):
     bottom = start-1
     top = end
 
-    done = 0
+    done = False
     while not done:
 
         while not done:
             bottom = bottom+1
 
             if bottom == top:
-                done = 1
+                done = True
                 break
 
             if list[bottom] > pivot:
@@ -30,7 +30,7 @@ def partition(list, start, end):
             top = top-1
 
             if top == bottom:
-                done = 1
+                done = True
                 break
 
             if list[top] < pivot:
