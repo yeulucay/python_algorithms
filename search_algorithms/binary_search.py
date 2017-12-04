@@ -3,9 +3,7 @@ def binary_search(arr, n, src):
     low = 0
     high = n
 
-    found = False
-
-    while not found:
+    while True:
 
         if high < low:
             return -1
