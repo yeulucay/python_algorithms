@@ -4,9 +4,7 @@ def interpolation(arr, n, src):
     high = n-1
     mid = -1
 
-    found = False
-
-    while not found:
+    while True:
 
         if (low == high) or (arr[low] == arr[high]):
             return -1
