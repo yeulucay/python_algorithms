@@ -5,20 +5,18 @@
 """
 
 def merge_func(l1, l2):
-    
+
     c = []
 
-    while (l1 is not None 
-        and l2 is not None  
-        and len(l1)>0 
+    while (l1 is not None
+        and l2 is not None
+        and len(l1)>0
         and len(l2)>0):
 
         if l1[0] > l2[0]:
-            c.append(l2[0])
-            l2.pop(0)
+            c.append(l2.pop(0))
         else:
-            c.append(l1[0])
-            l1.pop(0)
+            c.append(l1.pop(0))
 
     while l1 is not None and len(l1) > 0:
         c.append(l1.pop(0))
